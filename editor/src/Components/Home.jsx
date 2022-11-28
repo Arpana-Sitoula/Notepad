@@ -157,7 +157,7 @@ export default function TextEdit(props) {
           </div>
           <div className="col-4">
           <div className="row">
-            <div className={`text-${props.notMode}`}>Choose your text color:</div>
+            <div className={`text-${props.notMode}`}>Choose color to highlight the text :</div>
             <div
               className="btn-group btn-group-lg "
               role="group"
