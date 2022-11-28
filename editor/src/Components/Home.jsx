@@ -136,37 +136,37 @@ export default function TextEdit(props) {
       <div className="container">
         <div className="row">
           <div className="col-8">
-            <button className="btn btn-primary " onClick={clearText}>
+            <button disabled={text.length===0} className="btn btn-primary my-1" onClick={clearText}>
               Clear
             </button>
-            <button className="btn btn-primary mx-3" onClick={textBold}>
+            <button disabled={text.length===0} className="btn btn-primary mx-3 my-1" onClick={textBold}>
               Bold
             </button>
-            <button className="btn btn-primary " onClick={textItalic}>
+            <button disabled={text.length===0} className="btn btn-primary my-1" onClick={textItalic}>
               Italic
             </button>
-            <button className="btn btn-primary mx-3" onClick={textUnderline}>
+            <button disabled={text.length===0} className="btn btn-primary mx-3 my-1" onClick={textUnderline}>
               Underline
             </button>
-            <button className="btn btn-primary" onClick={toggleCase}>
+            <button disabled={text.length===0} className="btn btn-primary my-1" onClick={toggleCase}>
               Case Toggle
             </button>
-            <button className="btn btn-primary mx-3" onClick={copyText}>
+            <button disabled={text.length===0} className="btn btn-primary mx-3 my-1" onClick={copyText}>
               Copy
             </button>
           </div>
           <div className="col-4">
           <div className="row">
             <div className={`text-${props.notMode}`}>Choose color to highlight the text :</div>
-            <div
+            <div 
               className="btn-group btn-group-lg "
               role="group"
               aria-label="Basic mixed styles example"
             >
-              <button type="button" className="btn btn-danger" onClick={textRed}></button>
-              <button type="button" className="btn btn-success" onClick={textGreen}></button>
-              <button type="button" className="btn btn-warning" onClick={textYellow}></button>
-              <button type="button" className="btn btn-info" onClick={textBlue}></button>
+              <button type="button" disabled={text.length===0} className="btn btn-danger" onClick={textRed}></button>
+              <button type="button" disabled={text.length===0} className="btn btn-success" onClick={textGreen}></button>
+              <button type="button" disabled={text.length===0} className="btn btn-warning" onClick={textYellow}></button>
+              <button type="button"disabled={text.length===0}  className="btn btn-info" onClick={textBlue}></button>
             </div>
           </div>
           </div>
