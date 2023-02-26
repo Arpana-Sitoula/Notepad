@@ -22,15 +22,6 @@ This project was built using the following technologies:
 - React Router
 - Bootstrap
 
-## Contributing
-
-Contributions to the project are welcome! If you would like to contribute, please follow the steps below:
-
-1. Fork the repository
-2. Create a new branch for your changes: `git checkout -b my-new-feature`
-3. Make your changes and commit them with a descriptive message: `git commit -am 'Add some feature'`
-4. Push your changes to your fork: `git push origin my-new-feature`
-5. Submit a pull request
 
 
 
